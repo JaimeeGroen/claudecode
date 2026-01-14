@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siux Electra Stupa Pro ST4 2025 - Price Tracker</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Padel Racket Price Tracker</h1>
+    </header>
+
+    <main>
+      <section class="product-section">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="/images/siux-electra-st4-pro.png"
+                 alt="Siux Electra Stupa Pro ST4 2025"
+                 onerror="this.src='https://via.placeholder.com/400x500/1a1a2e/eee?text=Siux+Electra+ST4+Pro'">
+          </div>
+          <div class="product-info">
+            <h2 class="product-title">Siux Electra Stupa Pro ST4 2025</h2>
+            <p class="product-subtitle">Franco Stupaczuk Signature Racket</p>
+
+            <div class="product-description">
+              <p>The official racket of Franco Stupaczuk for 2025. A high-performance padel racket designed for advanced players who seek power, precision, and maximum spin.</p>
+            </div>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Shape</span>
+                <span class="spec-value">Hybrid</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Weight</span>
+                <span class="spec-value">355-375g</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Balance</span>
+                <span class="spec-value">Medium</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Frame</span>
+                <span class="spec-value">3K Carbon</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Surface</span>
+                <span class="spec-value">15K Carbon</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Core</span>
+                <span class="spec-value">EVA Hard</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price-section">
+        <div class="price-header">
+          <h2>Current Prices</h2>
+          <div class="price-controls">
+            <button id="refreshBtn" class="btn btn-primary">
+              <span class="btn-icon">&#8635;</span> Refresh Prices
+            </button>
+          </div>
+        </div>
+
+        <div class="price-cards" id="priceCards">
+          <div class="loading">Loading prices...</div>
+        </div>
+      </section>
+
+      <section class="chart-section">
+        <div class="chart-header">
+          <h2>Price History</h2>
+          <div class="chart-controls">
+            <select id="daysSelect">
+              <option value="7">Last 7 days</option>
+              <option value="30" selected>Last 30 days</option>
+              <option value="90">Last 90 days</option>
+            </select>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="priceChart"></canvas>
+        </div>
+        <div class="chart-legend" id="chartLegend"></div>
+      </section>
+
+      <section class="stores-section">
+        <h2>Tracked Stores</h2>
+        <div class="stores-list" id="storesList">
+          <div class="loading">Loading stores...</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Prices are updated daily at 8:00 AM. Last update: <span id="lastUpdate">-</span></p>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
