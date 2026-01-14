@@ -175,10 +175,21 @@ header h1 {
   font-size: 1.2rem;
 }
 
+.price-note {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 .price-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+}
+
+.price-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .price-card {
